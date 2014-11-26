@@ -1,0 +1,522 @@
+\section{i\+Cub\+Blinker\+\_\+\+I\+D\+L Class Reference}
+\label{classiCubBlinker__IDL}\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+
+
+\hyperlink{classiCubBlinker__IDL}{i\+Cub\+Blinker\+\_\+\+I\+D\+L} I\+D\+L Interface to i\+Cub\+Blinker services.  
+
+
+
+
+{\ttfamily \#include $<$i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+h$>$}
+
+
+
+Inherits Wire.
+
+
+
+Inherited by Blinker.
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_ae72e3564848946679985de69309573ab}{start} ()
+\begin{DoxyCompactList}\small\item\em Starts the blinking behavior (if it was not started before). \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_af669ee14a0f2b847921720621a9bc00f}{stop} ()
+\begin{DoxyCompactList}\small\item\em Starts the blinking behavior (if it was running). \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classiCubBlinker__IDL_a8a608d4eed94712df6c9aa7c65f0e21e}{status} ()
+\begin{DoxyCompactList}\small\item\em Provides the status of the module. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_af0ce78d699febd83051777f305a7085d}{blink} ()
+\begin{DoxyCompactList}\small\item\em Performs a single blink. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_a1701dfbea4e6e22c5c1ad383dc773ab8}{dblink} ()
+\begin{DoxyCompactList}\small\item\em Performs a double blink. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classiCubBlinker__IDL_a06845af0295ad022f265569e4694e97d}{save} ()
+\begin{DoxyCompactList}\small\item\em Saves the module configuration into a .ini file (default context is funny\+Things, default file is i\+Cub\+Breather.\+ini) \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classiCubBlinker__IDL_a6de8b7e26a2c8c24362c64bf28755d2f}{load} ()
+\begin{DoxyCompactList}\small\item\em Loads the calib configuration from a .ini file (default context is funny\+Things, default file is i\+Cub\+Breather.\+ini) \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_ad4a144300d21ad36d6318b44ae470ac0}{set\+\_\+min\+\_\+dt} (const double val)
+\begin{DoxyCompactList}\small\item\em Sets the minimum delta T between consecutive blinks. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_a3256e776823f2e5f17ad41bcfbdc5974}{set\+\_\+max\+\_\+dt} (const double val)
+\begin{DoxyCompactList}\small\item\em Sets the maximum delta T between consecutive blinks. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_a5acfaf3d0bd98cf7376889f44e51aa4f}{set\+\_\+interaction\+\_\+mode} (const std\+::string \&val)
+\begin{DoxyCompactList}\small\item\em Sets the interaction mode in which the module will go. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classiCubBlinker__IDL_a3f343f97c835d60c032a03f41a1b671d}{get\+\_\+min\+\_\+dt} ()
+\begin{DoxyCompactList}\small\item\em Gets the minimum delta T between consecutive blinks. \end{DoxyCompactList}\item 
+virtual double \hyperlink{classiCubBlinker__IDL_a172a5c1d4a247d1fd51c1364c33b4c66}{get\+\_\+max\+\_\+dt} ()
+\begin{DoxyCompactList}\small\item\em Gets the maximum delta T between consecutive blinks. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classiCubBlinker__IDL_a9dd8118c490a28a0f5e70dfba2b49cb6}{get\+\_\+interaction\+\_\+mode} ()
+\begin{DoxyCompactList}\small\item\em Gets the interaction mode in which the module is. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classiCubBlinker__IDL_a1f6e2fc8b61ab1ad56d917c983ef98a2}{calib} ()
+\begin{DoxyCompactList}\small\item\em Calibrate the servo of the eyelids. \end{DoxyCompactList}\item 
+virtual bool {\bfseries read} (yarp\+::os\+::\+Connection\+Reader \&connection)\label{classiCubBlinker__IDL_a76b708bd15e25a5556a273e691fe76a5}
+
+\item 
+virtual std\+::vector$<$ std\+::string $>$ {\bfseries help} (const std\+::string \&function\+Name=\char`\"{}-\/-\/all\char`\"{})\label{classiCubBlinker__IDL_a6a2abf7e1c8406dfcf9a4c27f512ac59}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classiCubBlinker__IDL}{i\+Cub\+Blinker\+\_\+\+I\+D\+L} I\+D\+L Interface to i\+Cub\+Blinker services. 
+
+Definition at line 17 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!blink@{blink}}
+\index{blink@{blink}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{blink()}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::blink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_af0ce78d699febd83051777f305a7085d}
+
+
+Performs a single blink. 
+
+\begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 457 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+457                             \{
+458   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+459   iCubBlinker\_IDL\_blink helper;
+460   helper.init();
+461   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+462     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::blink()"});
+463   \}
+464   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+465   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+466 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!calib@{calib}}
+\index{calib@{calib}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{calib()}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::calib (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a1f6e2fc8b61ab1ad56d917c983ef98a2}
+
+
+Calibrate the servo of the eyelids. 
+
+N\+O\+T Y\+E\+T I\+M\+P\+L\+E\+M\+E\+N\+T\+E\+D \begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 557 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+557                             \{
+558   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+559   iCubBlinker\_IDL\_calib helper;
+560   helper.init();
+561   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+562     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::calib()"});
+563   \}
+564   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+565   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+566 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!dblink@{dblink}}
+\index{dblink@{dblink}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{dblink()}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::dblink (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a1701dfbea4e6e22c5c1ad383dc773ab8}
+
+
+Performs a double blink. 
+
+\begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 467 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+467                              \{
+468   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+469   iCubBlinker\_IDL\_dblink helper;
+470   helper.init();
+471   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+472     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::dblink()"});
+473   \}
+474   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+475   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+476 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!get\+\_\+interaction\+\_\+mode@{get\+\_\+interaction\+\_\+mode}}
+\index{get\+\_\+interaction\+\_\+mode@{get\+\_\+interaction\+\_\+mode}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{get\+\_\+interaction\+\_\+mode()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::get\+\_\+interaction\+\_\+mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a9dd8118c490a28a0f5e70dfba2b49cb6}
+
+
+Gets the interaction mode in which the module is. 
+
+\begin{DoxyReturn}{Returns}
+a string with the current interaction mode. 
+\end{DoxyReturn}
+
+
+Definition at line 547 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+547                                                 \{
+548   std::string \_return = \textcolor{stringliteral}{""};
+549   iCubBlinker\_IDL\_get\_interaction\_mode helper;
+550   helper.init();
+551   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+552     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"std::string iCubBlinker\_IDL::get\_interaction\_mode()"});
+553   \}
+554   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+555   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+556 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!get\+\_\+max\+\_\+dt@{get\+\_\+max\+\_\+dt}}
+\index{get\+\_\+max\+\_\+dt@{get\+\_\+max\+\_\+dt}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{get\+\_\+max\+\_\+dt()}]{\setlength{\rightskip}{0pt plus 5cm}double i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::get\+\_\+max\+\_\+dt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a172a5c1d4a247d1fd51c1364c33b4c66}
+
+
+Gets the maximum delta T between consecutive blinks. 
+
+\begin{DoxyReturn}{Returns}
+the current value of max\+\_\+dt. 
+\end{DoxyReturn}
+
+
+Definition at line 537 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+537                                    \{
+538   \textcolor{keywordtype}{double} \_return = (double)0;
+539   iCubBlinker\_IDL\_get\_max\_dt helper;
+540   helper.init();
+541   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+542     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"double iCubBlinker\_IDL::get\_max\_dt()"});
+543   \}
+544   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+545   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+546 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!get\+\_\+min\+\_\+dt@{get\+\_\+min\+\_\+dt}}
+\index{get\+\_\+min\+\_\+dt@{get\+\_\+min\+\_\+dt}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{get\+\_\+min\+\_\+dt()}]{\setlength{\rightskip}{0pt plus 5cm}double i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::get\+\_\+min\+\_\+dt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a3f343f97c835d60c032a03f41a1b671d}
+
+
+Gets the minimum delta T between consecutive blinks. 
+
+\begin{DoxyReturn}{Returns}
+the current value of min\+\_\+dt. 
+\end{DoxyReturn}
+
+
+Definition at line 527 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+527                                    \{
+528   \textcolor{keywordtype}{double} \_return = (double)0;
+529   iCubBlinker\_IDL\_get\_min\_dt helper;
+530   helper.init();
+531   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+532     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"double iCubBlinker\_IDL::get\_min\_dt()"});
+533   \}
+534   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+535   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+536 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!load@{load}}
+\index{load@{load}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{load()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::load (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a6de8b7e26a2c8c24362c64bf28755d2f}
+
+
+Loads the calib configuration from a .ini file (default context is funny\+Things, default file is i\+Cub\+Breather.\+ini) 
+
+\begin{DoxyReturn}{Returns}
+a string with the full path of the file it loaded from. 
+\end{DoxyReturn}
+
+
+Definition at line 487 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+487                                 \{
+488   std::string \_return = \textcolor{stringliteral}{""};
+489   iCubBlinker\_IDL\_load helper;
+490   helper.init();
+491   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+492     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"std::string iCubBlinker\_IDL::load()"});
+493   \}
+494   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+495   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+496 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!save@{save}}
+\index{save@{save}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{save()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::save (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a06845af0295ad022f265569e4694e97d}
+
+
+Saves the module configuration into a .ini file (default context is funny\+Things, default file is i\+Cub\+Breather.\+ini) 
+
+\begin{DoxyReturn}{Returns}
+a string with the full path of the file it saved on. 
+\end{DoxyReturn}
+
+
+Definition at line 477 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+477                                 \{
+478   std::string \_return = \textcolor{stringliteral}{""};
+479   iCubBlinker\_IDL\_save helper;
+480   helper.init();
+481   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+482     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"std::string iCubBlinker\_IDL::save()"});
+483   \}
+484   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+485   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+486 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!set\+\_\+interaction\+\_\+mode@{set\+\_\+interaction\+\_\+mode}}
+\index{set\+\_\+interaction\+\_\+mode@{set\+\_\+interaction\+\_\+mode}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{set\+\_\+interaction\+\_\+mode(const std\+::string \&val)}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::set\+\_\+interaction\+\_\+mode (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a5acfaf3d0bd98cf7376889f44e51aa4f}
+
+
+Sets the interaction mode in which the module will go. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & specifies the new interaction mode (either idle or conversation for now). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 517 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+517                                                                \{
+518   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+519   iCubBlinker\_IDL\_set\_interaction\_mode helper;
+520   helper.init(val);
+521   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+522     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::set\_interaction\_mode(const std::string&
+       val)"});
+523   \}
+524   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+525   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+526 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!set\+\_\+max\+\_\+dt@{set\+\_\+max\+\_\+dt}}
+\index{set\+\_\+max\+\_\+dt@{set\+\_\+max\+\_\+dt}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{set\+\_\+max\+\_\+dt(const double val)}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::set\+\_\+max\+\_\+dt (
+\begin{DoxyParamCaption}
+\item[{const double}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a3256e776823f2e5f17ad41bcfbdc5974}
+
+
+Sets the maximum delta T between consecutive blinks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & specifies the new value of max\+\_\+dt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 507 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+507                                                  \{
+508   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+509   iCubBlinker\_IDL\_set\_max\_dt helper;
+510   helper.init(val);
+511   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+512     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::set\_max\_dt(const double val)"});
+513   \}
+514   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+515   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+516 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!set\+\_\+min\+\_\+dt@{set\+\_\+min\+\_\+dt}}
+\index{set\+\_\+min\+\_\+dt@{set\+\_\+min\+\_\+dt}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{set\+\_\+min\+\_\+dt(const double val)}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::set\+\_\+min\+\_\+dt (
+\begin{DoxyParamCaption}
+\item[{const double}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_ad4a144300d21ad36d6318b44ae470ac0}
+
+
+Sets the minimum delta T between consecutive blinks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & specifies the new value of min\+\_\+dt \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 497 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+497                                                  \{
+498   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+499   iCubBlinker\_IDL\_set\_min\_dt helper;
+500   helper.init(val);
+501   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+502     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::set\_min\_dt(const double val)"});
+503   \}
+504   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+505   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+506 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!start@{start}}
+\index{start@{start}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{start()}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_ae72e3564848946679985de69309573ab}
+
+
+Starts the blinking behavior (if it was not started before). 
+
+\begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 427 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+427                             \{
+428   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+429   iCubBlinker\_IDL\_start helper;
+430   helper.init();
+431   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+432     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::start()"});
+433   \}
+434   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+435   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+436 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!status@{status}}
+\index{status@{status}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{status()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_a8a608d4eed94712df6c9aa7c65f0e21e}
+
+
+Provides the status of the module. 
+
+\begin{DoxyReturn}{Returns}
+a string with both the blinking status (either on or off), and the interaction mode in which the blinker is. 
+\end{DoxyReturn}
+
+
+Definition at line 447 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+447                                   \{
+448   std::string \_return = \textcolor{stringliteral}{""};
+449   iCubBlinker\_IDL\_status helper;
+450   helper.init();
+451   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+452     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"std::string iCubBlinker\_IDL::status()"});
+453   \}
+454   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+455   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+456 \}
+\end{DoxyCode}
+\index{i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}!stop@{stop}}
+\index{stop@{stop}!i\+Cub\+Blinker\+\_\+\+I\+D\+L@{i\+Cub\+Blinker\+\_\+\+I\+D\+L}}
+\subsubsection[{stop()}]{\setlength{\rightskip}{0pt plus 5cm}bool i\+Cub\+Blinker\+\_\+\+I\+D\+L\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classiCubBlinker__IDL_af669ee14a0f2b847921720621a9bc00f}
+
+
+Starts the blinking behavior (if it was running). 
+
+\begin{DoxyReturn}{Returns}
+true/false on success/failure. 
+\end{DoxyReturn}
+
+
+Definition at line 437 of file i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp.
+
+
+\begin{DoxyCode}
+437                            \{
+438   \textcolor{keywordtype}{bool} \_return = \textcolor{keyword}{false};
+439   iCubBlinker\_IDL\_stop helper;
+440   helper.init();
+441   \textcolor{keywordflow}{if} (!yarp().canWrite()) \{
+442     yError(\textcolor{stringliteral}{"Missing server method '%s'?"},\textcolor{stringliteral}{"bool iCubBlinker\_IDL::stop()"});
+443   \}
+444   \textcolor{keywordtype}{bool} ok = yarp().write(helper,helper);
+445   \textcolor{keywordflow}{return} ok?helper.\_return:\_return;
+446 \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/dev/icub-\/contrib-\/iit/funny-\/things/modules/i\+Cub\+Blinker/include/i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+h\item 
+C\+:/dev/icub-\/contrib-\/iit/funny-\/things/modules/i\+Cub\+Blinker/src/i\+Cub\+Blinker\+\_\+\+I\+D\+L.\+cpp\end{DoxyCompactItemize}
